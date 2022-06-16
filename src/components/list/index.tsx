@@ -1,10 +1,12 @@
-import React from 'react';
+import { listeners } from 'process';
+import React, { useState } from 'react';
 import { isTemplateMiddleOrTemplateTail } from 'typescript';
 import Item from './item';
 import styles from './style.module.scss';
 
 function List() {
-    const tarefas = [{
+   const [tarefas, setTarefas] = useState(
+    [{
         tarefa: 'React',
         tempo: '02:00:000'
     }, {
@@ -16,9 +18,12 @@ function List() {
         tempo: '03:00:00'
     }
     ]
+   );
     return (
         <aside className={styles.listaTarefas}>
-            <h2>
+            <h2 onClick={() => {
+                setTarefas ([...tarefas, {tarefa: "Estudar estado", tempo: "05:00:00"} ])
+            }}>
                 Studies of the day
             </h2>
             <ul>
