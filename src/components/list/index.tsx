@@ -1,5 +1,7 @@
 import React from 'react';
-import styles from'./style.module.scss';
+import { isTemplateMiddleOrTemplateTail } from 'typescript';
+import Item from './item';
+import styles from './style.module.scss';
 
 function List() {
     const tarefas = [{
@@ -22,14 +24,10 @@ function List() {
             <ul>
                 {tarefas.map((item, index) => (
                     <div key={index}>
-                        <li className={styles.item}>
-                            <h3>
-                                {item.tarefa}
-                            </h3>
-                            <span>
-                                {item.tempo}
-                            </span>
-                        </li>
+                        <Item
+                            key={index}
+                            {...item}
+                        />
                     </div>
                 ))}
             </ul>
