@@ -1,14 +1,14 @@
 import styles from '../pages/style.module.scss'
 import React from "react";
-import Formulario from "../components/formulario";
-import Lista from '../components/lista';
+import Formm from "../components/form";
+import List from '../components/list';
 
 function App() {
   return (
     <div className={styles.appStyle}>
-      <h1>Alura Studies</h1>
-      <Formulario />
-      <Lista />
+      <h1>@Alura Studies</h1>
+      <Formm />
+      <List />
     </div>
 
   );
