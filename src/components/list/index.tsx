@@ -10,11 +10,11 @@ function List() {
         tarefa: 'React',
         tempo: '02:00:000'
     }, {
-        tarefa: 'Javascript',
+        tarefa: 'Javascript ',
         tempo: '01:00:000'
     },
     {
-        tarefa: 'Typescript',
+        tarefa: 'Typescript ',
         tempo: '03:00:00'
     }
     ]
