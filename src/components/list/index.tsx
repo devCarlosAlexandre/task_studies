@@ -14,7 +14,7 @@ function List() {
         tempo: '01:00:000'
     },
     {
-        tarefa: 'Typescript ',
+        tarefa: 'Typescript',
         tempo: '03:00:00'
     }
     ]
