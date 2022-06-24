@@ -14,7 +14,7 @@ function List() {
         tempo: '01:00:000'
     },
     {
-        tarefa: 'Typescript',
+        tarefa: 'Typescript ',
         tempo: '03:00:00'
     }
     ]
@@ -22,7 +22,7 @@ function List() {
     return (
         <aside className={styles.listaTarefas}>
             <h2 onClick={() => {
-                setTarefas ([...tarefas, {tarefa: "Estudar estado", tempo: "05:00:00"} ])
+                setTarefas ([...tarefas, {tarefa: "Estudar estado ", tempo: "05:00:00 "} ])
             }}>
                 Studies of the day
             </h2>
